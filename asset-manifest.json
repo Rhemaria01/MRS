@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/MRS/static/css/main.47c3df29.css",
+    "main.js": "/MRS/static/js/main.95bdeade.js",
+    "static/js/787.61f679e0.chunk.js": "/MRS/static/js/787.61f679e0.chunk.js",
+    "static/media/animation.png": "/MRS/static/media/animation.fa34f4b2cba238f6017f.png",
+    "static/media/fantasy.png": "/MRS/static/media/fantasy.375dadd005cac3523275.png",
+    "static/media/war.png": "/MRS/static/media/war.a69dafbe914d0ba20ca3.png",
+    "static/media/tv-movie.png": "/MRS/static/media/tv-movie.de5e1546dc7bc59fe543.png",
+    "static/media/adventure.png": "/MRS/static/media/adventure.602233278da930dcad3f.png",
+    "static/media/science-fiction.png": "/MRS/static/media/science-fiction.1d15092813abcf831515.png",
+    "static/media/mystery.png": "/MRS/static/media/mystery.b4f5d51e41fcf2eba027.png",
+    "static/media/comedy.png": "/MRS/static/media/comedy.ed9d61510a645da626ca.png",
+    "static/media/drama.png": "/MRS/static/media/drama.0c51dcd5a438521c2570.png",
+    "static/media/history.png": "/MRS/static/media/history.091b195fa9f38f19dfd6.png",
+    "static/media/music.png": "/MRS/static/media/music.f0b9bb506b149b22b1ce.png",
+    "static/media/thriller.png": "/MRS/static/media/thriller.833489960c326d5347c9.png",
+    "static/media/family.png": "/MRS/static/media/family.0b2a83a3c69905c14ae1.png",
+    "static/media/horror.png": "/MRS/static/media/horror.528d5b91eef46dceed54.png",
+    "static/media/logo.png": "/MRS/static/media/logo.556fbffdbaaed7d4740c.png",
+    "static/media/documentary.png": "/MRS/static/media/documentary.9c99481d1beee9d7c40c.png",
+    "static/media/western.png": "/MRS/static/media/western.e82231dddb6abea619b2.png",
+    "static/media/romance.png": "/MRS/static/media/romance.1b956682b8145f729ce2.png",
+    "static/media/crime.png": "/MRS/static/media/crime.c60883b059be03329ca2.png",
+    "static/media/action.png": "/MRS/static/media/action.cd3bd9131428a3fc361b.png",
+    "static/media/slick.svg": "/MRS/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/MRS/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/MRS/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/MRS/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/MRS/index.html",
+    "main.47c3df29.css.map": "/MRS/static/css/main.47c3df29.css.map",
+    "main.95bdeade.js.map": "/MRS/static/js/main.95bdeade.js.map",
+    "787.61f679e0.chunk.js.map": "/MRS/static/js/787.61f679e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47c3df29.css",
+    "static/js/main.95bdeade.js"
+  ]
+}
