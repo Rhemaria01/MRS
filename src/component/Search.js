@@ -49,9 +49,7 @@ const Search = () => {
     loop: true,
   }}
           onInit={(typewriter) => {
-            typewriter.typeString('MOVIES RECOMMENDATION SYSTEM (MRS)')
-            .pauseFor(2500)
-            .deleteAll()
+            typewriter
             .typeString('MOVIES ON THE GO!')
             .pauseFor(2500)
             .deleteAll()       
@@ -63,7 +61,8 @@ const Search = () => {
     </h1>
     <form onSubmit={(e) => handleSubmit(e) }>
     <div className='searchComponent'>
-    <input type='text' id="search-text" placeholder='Search Movies, Series & Many More' list="datalistOptions" onChange={e=>onChangeHandler(e)} value={keyword} className='search text-capitalize'/>
+    <input type='text' id="search-text" placeholder='Search Movies, Series & Many More' list="datalistOptions" onChange={e=>onChangeHandler(e)} value={keyword} className='search large text-capitalize'/>
+    <input type='text' id="search-text" placeholder='Search Movies' list="datalistOptions" onChange={e=>onChangeHandler(e)} value={keyword} className='search small text-capitalize'/>
     <datalist id="datalistOptions" >
     {suggestions.length > 0 ? suggestions.filter(movie => movie.original_language === "en").map(movie => (
         
@@ -73,7 +72,7 @@ const Search = () => {
         )) : null}
     </datalist>
     {/* {suggestions.length > 0 ?  <Link to={`/movie/${suggestions[0].id}/${suggestions[0].title}`}><input type='button' value='Search' className='btn01 ms-5'/></Link> : <input type='button' value='Search' className='btn01 ms-5'/>} */}
-    <input type='submit' value='Search' className='btn01 ms-5'/>
+    <input type='submit' value='Search' className='btn01'/>
     </div> 
     </form> 
     </div>

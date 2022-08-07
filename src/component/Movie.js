@@ -17,7 +17,7 @@ const Movie = (genres) => {
         // console.log(res.data)
     }
     const fetchRecommendedMovies = async () => {
-      fetch(`/movie/${params.name}`).then(res => res.json()).then(data => setRecommendedMovies(data.recommended_movie)).catch(err => console.log(err))
+      fetch(`https://movierecommenderapi.herokuapp.com/movie/${params.name}`).then(res => res.json()).then(data => setRecommendedMovies(data.recommended_movie)).catch(err => console.log(err))
       
     }
     useEffect(() => {
@@ -38,7 +38,7 @@ const Movie = (genres) => {
 
     <div id="mycontent">
     <div id="mcontent">
-      <div className="poster-lg">
+      <div className="poster-md">
         <img className="poster" style={{borderRadius: 40, marginLeft: 90}} height={400} width={250} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
 
       </div>
@@ -73,8 +73,8 @@ const Movie = (genres) => {
   <div className="movie-content ">
 
   {recommendedMovies.length > 0 ?
-   recommendedMovies.map(movie => {
-     return <div className="moviecard"  key={movie}>
+   recommendedMovies.map((movie,index) => {
+     return <div className={`poster-lg ${index>4? "d-none d-sm-block":""}`}  key={movie}>
      <RecommendedMovies movieId = {movie}/> 
      </div>}) 
    : <h1><Emoji text="😥"/>Sorry Recommendation not available</h1>}
