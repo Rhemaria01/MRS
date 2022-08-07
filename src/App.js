@@ -31,7 +31,7 @@ function App() {
       <Router>
         <Header/>
         <Routes>
-          <Route path="/MRS" element={<HomePage  genres={genres}/>} />
+          <Route path="/" element={<HomePage  genres={genres}/>} />
           <Route path="/genre/:id" element={<SingleGenre  genres={genres}/>} />
           <Route path="/movie/:id/:name" element={<Movie  genres={genres}/>} />
         </Routes>

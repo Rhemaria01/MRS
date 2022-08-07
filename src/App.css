@@ -66,18 +66,18 @@ background: #FF5757;
 .logo{
 width: 251px;
 height: 89px;
-animation: fade 500ms ease-in-out forwards;
+animation: fade 1000ms ease-in-out forwards;
 opacity: 0;
-transform: translateY(50%);
+transform: translateX(50%);
 }
 @keyframes fade {
   0% {
     opacity: 0;
-    transform: translateY(50%);
+    transform: translateX(50%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
