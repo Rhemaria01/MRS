@@ -11,6 +11,10 @@ const Movie = (genres) => {
     // console.log(params.name)
     const [movie,setMovie] = useState({})
     const [recommendedMovies, setRecommendedMovies] = useState({})
+    const [loading,setLoading] = useState(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 15000)
     const fetchMovie = async () => {
         const res = await axios.get(`https://api.themoviedb.org/3/movie/${params.id}?api_key=4c84e185bd2955be5432fcc0687697d8&language=en-US`)
         setMovie(res.data)
@@ -77,7 +81,14 @@ const Movie = (genres) => {
      return <div className={`poster-lg ${index>4? "d-none d-sm-block":""}`}  key={movie}>
      <RecommendedMovies movieId = {movie}/> 
      </div>}) 
-   : <h1><Emoji text="😥"/>Sorry Recommendation not available</h1>}
+   : 
+   
+   loading ? <div className="spinner-border text-light" role="status"> </div>: <h1><Emoji text="😥"/>Sorry Recommendation not available</h1>
+   
+    
+    
+   
+   }
   </div> 
   
   <Search/>

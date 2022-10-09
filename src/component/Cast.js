@@ -38,12 +38,12 @@ const Cast = ({id}) => {
             }):
             <div className="d-flex justify-content-center" style={{height: "100vh"}}>
           {/* {console.log('loading')} */}
-      <div className="spinner-border" style={{width: "3rem", height: "3rem" }}role="status">
+      <div className="spinner-border" style={{width: "3rem", height: "3rem" }} role="status">
       </div>
     </div> :
     <div className="d-flex justify-content-center" style={{height: "100vh"}}>
           {/* {console.log('loading')} */}
-      <div className="spinner-border" style={{width: "3rem", height: "3rem" }}role="status">
+      <div className="spinner-border" style={{width: "3rem", height: "3rem" }} role="status">
       </div>
     </div>
         }
