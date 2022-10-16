@@ -5,7 +5,10 @@ body{
     background-color: #333333;
 
 }
-
+a{
+    color: inherit !important;
+    text-decoration: none !important;
+}
 
 .App-header {
   background-color: #282c34;

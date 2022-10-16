@@ -26,6 +26,7 @@ const Cast = ({id}) => {
 
             cast.cast.slice(0,6).map(cast => {
                 return (
+                    <a href={`https://en.wikipedia.org/wiki/${cast.name}`}>
                     <div className="castcard card "  style={{width: "15rem",borderRadius:20}} key={cast.id}>
                     
                         <img style={{borderRadius: 20}} alt="Image not Available" src={`https://image.tmdb.org/t/p/w500/${cast.profile_path}` } />
@@ -34,6 +35,7 @@ const Cast = ({id}) => {
                             <h5>{`Character: ${cast.character}`}</h5>
                         </div>
                     </div>
+                    </a>
                 )
             }):
             <div className="d-flex justify-content-center" style={{height: "100vh"}}>
